@@ -9,7 +9,11 @@
         android:id="@+id/mainFragment"
         android:name="com.oganbelema.navcontrollerdemo.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.oganbelema.navcontrollerdemo.SecondFragment"
