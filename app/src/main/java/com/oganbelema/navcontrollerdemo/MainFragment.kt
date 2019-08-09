@@ -23,7 +23,8 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         button.setOnClickListener {
-            findNavController().navigate(MainFragmentDirections.actionMainFragmentToSecondFragment())
+            val userName = userNameEditText.text.toString()
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToSecondFragment(userName))
         }
 
     }
